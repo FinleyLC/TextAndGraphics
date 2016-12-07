@@ -1,7 +1,7 @@
 # TextAndGraphics
 仿新闻页面文字图片混排页面。只需要简单传值即可动态生成TextView和ImageView,图片可以点击进入查看放大缩小，支持网络图片、本地图片
-#使用方式
 
+##使用方式
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
+##主页布局
 
-//主页布局
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -50,12 +50,13 @@ public class MainActivity extends AppCompatActivity {
         android:scrollbars="none"/>
 </RelativeLayout>
 
-//图文数据的格式
-String content = 
+
+###图文数据的格式，字符串：
+
  "[#TEXT#]这里是第一段文字"
 +"[#SPLIT#]"
 +"[#IMAGE_NET#]http://www.picture.com"
 +"[#SPLIT#]"
 +"[#TEXT#]这里是第二段文字"
 +"[#SPLIT#]"
-+"[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png";
++"[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png"
