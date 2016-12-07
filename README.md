@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+
+
 //主页布局
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -52,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
 String content = 
  "[#TEXT#]这里是第一段文字"
 +"[#SPLIT#]"
-+"[#IMAGE_NET#]http://www.picture.com"//图片网络地址
++"[#IMAGE_NET#]http://www.picture.com"
 +"[#SPLIT#]"
 +"[#TEXT#]这里是第二段文字"
 +"[#SPLIT#]"
-+"[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png"//本地图片";
++"[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png";
