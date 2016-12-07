@@ -4,6 +4,7 @@
 ##使用方式
 
     public class MainActivity extends AppCompatActivity {
+    
         private ScrollView sv_main;
         private String[] mData;//图文列表的数据
         private TextAndGraphicsView mTextAndGraphicsView;//图文控件
