@@ -51,16 +51,37 @@
 
 ###图文数据的格式
 
+    public class DataUtil {
+
         public static final String TEXT_TAG =  "[#TEXT#]";//文字标识
         public static final String IMAGE_NET_TAG = "[#IMAGE_NET#]";//网络图片标识
         public static final String IMAGE_LOCAL_TAG = "[#IMAGE_LOCAL#]";//本地图片标识(assets目录下)
         public static final String SPLIT_TAG = "\\[\\#SPLIT\\#\\]";//分割处标识
-        
-        String content = 
-        "[#TEXT#]这里是第一段文字"+
-        "[#SPLIT#]"+
-        "[#IMAGE_NET#]http://www.picture.com"
-        "[#SPLIT#]"+
-        "[#TEXT#]这里是第二段文字"+
-        "[#SPLIT#]"+
-        "[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png";
+
+        /**
+         * 获取图文的数据，这些数据可以从服务端取，或者写在本地的某个文件也可以
+         * @return 图文数据
+         */
+        public static String getData(){
+            //格式：文字开头用TEXT_TAG标识，网络图片地址用IMAGE_NET_TAG标识，本地图片用IMAGE_LOCAL_TAG标识，每两个标识内容之间要用SPLIT_TAG分隔
+
+            String content = 
+            "[#TEXT#]这里是第一段文字"+
+            "[#SPLIT#]"+
+            "[#IMAGE_NET#]http://www.picture.com"+   /*网络图片*/
+            "[#SPLIT#]"+
+            "[#TEXT#]这里是第二段文字"+
+            "[#SPLIT#]"+
+            "[#IMAGE_LOCAL#]file:///android_asset/local_picture2.png";   /*本地图片*/
+
+            return content;
+        }
+    }
+
+
+        public static final String TEXT_TAG =  "[#TEXT#]";//文字标识
+        public static final String IMAGE_NET_TAG = "[#IMAGE_NET#]";//网络图片标识
+        public static final String IMAGE_LOCAL_TAG = "[#IMAGE_LOCAL#]";//本地图片标识(assets目录下)
+        public static final String SPLIT_TAG = "\\[\\#SPLIT\\#\\]";//分割处标识
+                
+        
