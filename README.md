@@ -1,13 +1,14 @@
 # TextAndGraphics
 仿新闻页面文字图片混排页面。只需要简单配置即可动态生成TextView和ImageView，图片可以点击进入查看放大缩小，支持网络图片和本地图片
 
+
 ##使用方式
 
-    public class MainActivity extends AppCompatActivity {
-    
+    public class MainActivity extends AppCompatActivity {
+
         private ScrollView sv_main;
-        private String[] mData;//图文列表的数据
-        private TextAndGraphicsView mTextAndGraphicsView;//图文控件
+        private String[] mData;//图文数据的列表
+        private TextAndGraphicsView mTextAndGraphicsView;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +26,10 @@
 
         private void initView() {
             sv_main = (ScrollView) findViewById(R.id.sv_main);
-            //只需要把控件，放到ScrollView里面即可
             mTextAndGraphicsView = new TextAndGraphicsView(this,mData);
             sv_main.addView(mTextAndGraphicsView);
         }
     }
-
 
 ##主页布局
 
