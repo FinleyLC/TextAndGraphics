@@ -1,5 +1,5 @@
 # TextAndGraphics
-仿新闻页面文字图片混排页面。只需要简单配置即可动态生成TextView和ImageView，图片可以点击进入查看放大缩小，支持网络图片和本地图片
+好用的图文混排框架，仿新闻页面。只需简单配置就能实现页面布局，支持网络图片和本地图片
 
 ![textandgraphics4](https://cloud.githubusercontent.com/assets/18639409/20962076/cea2c8ec-bca2-11e6-91e4-720812951163.gif)
 
