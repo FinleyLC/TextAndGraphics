@@ -6,7 +6,7 @@
 
     public class MainActivity extends AppCompatActivity {
 
-        private ScrollView sv_main;
+        private ScrollView sv_main;//TextAndGraphicsView的父控件必须是ScrollView
         private String[] mData;//图文数据的列表
         private TextAndGraphicsView mTextAndGraphicsView;
 
