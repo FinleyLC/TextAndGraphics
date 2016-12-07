@@ -1,7 +1,7 @@
 # TextAndGraphics
 仿新闻页面文字图片混排页面。只需要简单配置即可动态生成TextView和ImageView，图片可以点击进入查看放大缩小，支持网络图片和本地图片
 
-![textandgraphics2](https://cloud.githubusercontent.com/assets/18639409/20961787/9f34400a-bca1-11e6-80dc-04acc07b32f2.gif)
+![textandgraphics4](https://cloud.githubusercontent.com/assets/18639409/20962076/cea2c8ec-bca2-11e6-91e4-720812951163.gif)
 
 ##使用方式
 
