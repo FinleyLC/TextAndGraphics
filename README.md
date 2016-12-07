@@ -49,7 +49,13 @@
         </RelativeLayout>
 
 
-###图文数据的格式，字符串：
+###图文数据的格式
+
+        public static final String TEXT_TAG =  "[#TEXT#]";//文字标识
+        public static final String IMAGE_NET_TAG = "[#IMAGE_NET#]";//网络图片标识
+        public static final String IMAGE_LOCAL_TAG = "[#IMAGE_LOCAL#]";//本地图片标识(assets目录下)
+        public static final String SPLIT_TAG = "\\[\\#SPLIT\\#\\]";//分割处标识
+        
         String content = 
         "[#TEXT#]这里是第一段文字"+
         "[#SPLIT#]"+
